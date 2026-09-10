@@ -8,39 +8,67 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenConsultation }) => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#FFF3E5] via-[#FFF9F3] to-[#FDF8F3] border-b border-orange-200/80 pt-12 pb-14 sm:pt-16 sm:pb-20 text-slate-900">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#FFF5EA] via-[#FFFBF6] to-[#FAF6F0] border-b border-orange-200/90 pt-12 pb-14 sm:pt-16 sm:pb-20 text-slate-900">
       
-      {/* 1. Visible Warm Orange Perspective 3D Grid SVG */}
-      <div className="absolute inset-0 pointer-events-none opacity-60">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+      {/* 1. Dynamic SVG Topographic Elevation Wave Vectors */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <svg
+          className="absolute w-[140%] h-[140%] -top-[20%] -left-[20%] opacity-40"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 900"
+          fill="none"
+        >
+          <path
+            d="M-100 250 C 300 150, 600 350, 1000 200 C 1200 120, 1400 280, 1600 220"
+            stroke="url(#warm-wave-grad-1)"
+            strokeWidth="2"
+            strokeDasharray="6 8"
+          />
+          <path
+            d="M-100 380 C 250 280, 550 480, 950 320 C 1250 200, 1450 380, 1600 340"
+            stroke="url(#warm-wave-grad-2)"
+            strokeWidth="1.75"
+          />
+          <path
+            d="M-100 520 C 350 400, 700 620, 1100 460 C 1350 360, 1500 500, 1600 480"
+            stroke="url(#warm-wave-grad-1)"
+            strokeWidth="2.2"
+          />
+          <path
+            d="M-100 660 C 400 550, 800 750, 1200 600 C 1400 520, 1550 620, 1600 600"
+            stroke="url(#warm-wave-grad-2)"
+            strokeWidth="1.5"
+            strokeDasharray="4 6"
+          />
+          {/* Glowing Financial Network Nodes on Curves */}
+          <circle cx="300" cy="150" r="4.5" fill="#ea580c" opacity="0.6" />
+          <circle cx="600" cy="350" r="5.5" fill="#f97316" opacity="0.7" />
+          <circle cx="1000" cy="200" r="4" fill="#ea580c" opacity="0.5" />
+          <circle cx="550" cy="480" r="6" fill="#f97316" opacity="0.65" />
+          <circle cx="950" cy="320" r="5" fill="#c2410c" opacity="0.6" />
+          <circle cx="700" cy="620" r="5.5" fill="#ea580c" opacity="0.5" />
+
           <defs>
-            <pattern id="hero-warm-grid" width="36" height="36" patternUnits="userSpaceOnUse">
-              <path d="M 36 0 L 0 0 0 36" fill="none" stroke="rgba(234, 88, 12, 0.16)" strokeWidth="1" />
-            </pattern>
-            <radialGradient id="hero-warm-mask-grad" cx="50%" cy="40%" r="65%">
-              <stop offset="0%" stopColor="#000" stopOpacity="1" />
-              <stop offset="70%" stopColor="#000" stopOpacity="0.6" />
-              <stop offset="100%" stopColor="#000" stopOpacity="0" />
-            </radialGradient>
-            <mask id="hero-warm-mask">
-              <rect width="100%" height="100%" fill="url(#hero-warm-mask-grad)" />
-            </mask>
+            <linearGradient id="warm-wave-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#ea580c" stopOpacity="0.1" />
+              <stop offset="50%" stopColor="#f97316" stopOpacity="0.35" />
+              <stop offset="100%" stopColor="#d97706" stopOpacity="0.1" />
+            </linearGradient>
+            <linearGradient id="warm-wave-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#d97706" stopOpacity="0.1" />
+              <stop offset="50%" stopColor="#ea580c" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#f97316" stopOpacity="0.1" />
+            </linearGradient>
           </defs>
-          <rect width="100%" height="100%" fill="url(#hero-warm-grid)" mask="url(#hero-warm-mask)" />
         </svg>
       </div>
 
-      {/* 2. Warm Brand Dot Matrix Overlay */}
-      <div className="absolute inset-0 bg-brand-dot-pattern opacity-45 pointer-events-none" />
+      {/* 2. High-Tech Blueprint Plus Matrix Pattern */}
+      <div className="absolute inset-0 bg-plus-matrix opacity-40 pointer-events-none" />
 
-      {/* 3. Subtle Warm Geometric Ambient Rings */}
-      <div className="absolute top-6 right-8 w-96 h-96 rounded-full border-2 border-orange-300/40 pointer-events-none opacity-60 animate-spin-slow hidden md:block" />
-      <div className="absolute top-16 right-18 w-72 h-72 rounded-full border border-dashed border-orange-400/35 pointer-events-none opacity-50 hidden md:block" />
-      <div className="absolute -bottom-10 left-10 w-80 h-80 rounded-full border-2 border-amber-300/40 pointer-events-none opacity-50 hidden md:block" />
-
-      {/* 4. Warm Sunset Gradient Glow Highlights */}
-      <div className="absolute -top-20 right-1/4 w-[500px] h-[500px] bg-gradient-to-br from-orange-400/20 via-amber-300/15 to-transparent rounded-full pointer-events-none" />
-      <div className="absolute -bottom-20 -left-16 w-[450px] h-[450px] bg-gradient-to-tr from-amber-400/15 via-orange-300/15 to-transparent rounded-full pointer-events-none" />
+      {/* 3. Subtle Warm Ambient Orbs */}
+      <div className="absolute -top-16 right-1/4 w-[500px] h-[500px] bg-gradient-to-br from-orange-400/20 via-amber-300/15 to-transparent rounded-full pointer-events-none" />
+      <div className="absolute -bottom-16 -left-16 w-[450px] h-[450px] bg-gradient-to-tr from-amber-400/15 via-orange-300/15 to-transparent rounded-full pointer-events-none" />
 
       <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[460px]">
@@ -190,6 +218,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
     </section>
   );
 };
+
 
 
 
