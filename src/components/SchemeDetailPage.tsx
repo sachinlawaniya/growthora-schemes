@@ -39,14 +39,14 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </div>
 
-        {/* 2. Hero Section (Clean Light Theme with Orange Highlights & Sharp White Metric Cards) */}
-        <section className="bg-gradient-to-b from-orange-50/40 via-white to-slate-50/60 pt-12 pb-16 border-b border-slate-200 relative">
+        {/* 2. Hero Section (Clean Light Theme with Orange Highlights, Micro-Textures & Sharp White Metric Cards) */}
+        <section className="bg-gradient-to-b from-orange-50/60 via-white to-slate-50/60 bg-brand-grid-pattern pt-12 pb-16 border-b border-slate-200 relative overflow-hidden">
           <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
               {/* Left Column: Heading & Information */}
               <div className="lg:col-span-7 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange-100 text-orange-700 border border-orange-200 text-[11px] font-extrabold uppercase tracking-wider">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange-100/90 text-orange-700 border border-orange-200 text-[11px] font-extrabold uppercase tracking-wider shadow-2xs">
                   <Sparkles className="w-3.5 h-3.5 text-orange-600" />
                   <span>{pageData.categoryBadge}</span>
                 </div>
@@ -81,17 +81,18 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
                 </div>
               </div>
 
-              {/* Right Column: 4 Crisp White Metric Highlight Boxes */}
+              {/* Right Column: 4 Crisp White Metric Highlight Boxes with Brand Accents */}
               <div className="lg:col-span-5 grid grid-cols-2 gap-3.5">
                 {pageData.metrics.map((metric, idx) => (
                   <div
                     key={idx}
-                    className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-orange-400 hover:shadow-md transition-all shadow-xs flex flex-col justify-between"
+                    className="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-orange-400 hover:shadow-md transition-all shadow-xs flex flex-col justify-between relative overflow-hidden group"
                   >
-                    <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">
+                    <div className="absolute top-0 right-0 w-12 h-12 bg-orange-50 rounded-bl-full pointer-events-none group-hover:bg-orange-100 transition-colors" />
+                    <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block relative z-10">
                       {metric.label}
                     </span>
-                    <strong className="text-xl sm:text-2xl font-heading font-extrabold text-[#0D1836] mt-2 block">
+                    <strong className="text-xl sm:text-2xl font-heading font-extrabold text-[#0D1836] mt-2 block relative z-10">
                       {metric.value}
                     </strong>
                   </div>
@@ -102,9 +103,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 3. "Who Can Apply?" Section (Solid White Background with Crisp Cards) */}
-        <section className="py-16 bg-white border-b border-slate-200">
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
+        {/* 3. "Who Can Apply?" Section (Brand Dot Pattern Texture) */}
+        <section className="py-16 bg-white bg-brand-dot-pattern border-b border-slate-200 relative">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
                 Eligibility Assessment
@@ -121,7 +122,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               {pageData.whoCanApply.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-slate-50/70 border border-slate-200 hover:bg-white hover:border-orange-400 hover:shadow-md transition-all space-y-2.5 shadow-2xs"
+                  className="p-6 rounded-2xl bg-white/95 border border-slate-200 hover:border-orange-400 hover:shadow-md transition-all space-y-2.5 shadow-xs"
                 >
                   <div className="w-8 h-8 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center font-extrabold text-xs border border-orange-200">
                     <Check className="w-4 h-4" />
@@ -138,9 +139,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 4. "Key Features" Section (Light Slate Background with White Highlight Cards) */}
-        <section className="py-16 bg-slate-50/70 border-b border-slate-200">
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
+        {/* 4. "Key Features" Section (Brand Cross Pattern Texture) */}
+        <section className="py-16 bg-slate-50/80 bg-brand-cross-pattern border-b border-slate-200 relative">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
                 Program Highlights
@@ -174,9 +175,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 5. "Scheme Benefits" Section (Solid White Background) */}
-        <section className="py-16 bg-white border-b border-slate-200">
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
+        {/* 5. "Scheme Benefits" Section (Tech Stripes Texture) */}
+        <section className="py-16 bg-white bg-tech-stripes border-b border-slate-200 relative">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
                 Advantages & Subsidies
@@ -190,7 +191,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               {pageData.benefits.map((b, idx) => (
                 <div
                   key={idx}
-                  className="p-4.5 rounded-xl border border-slate-200 bg-slate-50/60 flex items-start gap-3 shadow-2xs hover:bg-white hover:border-orange-300 hover:shadow-xs transition-all"
+                  className="p-4.5 rounded-xl border border-slate-200 bg-white flex items-start gap-3 shadow-xs hover:border-orange-400 hover:shadow-sm transition-all"
                 >
                   <span className="w-5 h-5 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 border border-orange-200">
                     <CheckCircle2 className="w-3.5 h-3.5" />
@@ -204,9 +205,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 6. "Application Process" 4 Steps */}
-        <section className="py-16 bg-slate-50/70 border-b border-slate-200">
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
+        {/* 6. "Application Process" 4 Steps (Brand Grid Texture) */}
+        <section className="py-16 bg-slate-50/80 bg-brand-grid-pattern border-b border-slate-200 relative">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
                 Step-by-Step Guide
@@ -239,9 +240,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 7. "Documents Required" (Solid Clean White Section with Light Pills) */}
-        <section className="py-16 bg-white border-b border-slate-200">
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
+        {/* 7. "Documents Required" (Brand Dot Pattern Texture) */}
+        <section className="py-16 bg-white bg-brand-dot-pattern border-b border-slate-200 relative">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
                 Checklist
@@ -258,7 +259,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               {pageData.documentsRequired.map((doc, idx) => (
                 <div
                   key={idx}
-                  className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3 text-[12.5px] text-slate-700 font-medium hover:bg-white hover:border-orange-400 hover:shadow-xs transition-all"
+                  className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center gap-3 text-[12.5px] text-slate-700 font-medium hover:border-orange-400 hover:shadow-xs transition-all shadow-2xs"
                 >
                   <span className="w-5 h-5 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xs shrink-0 border border-orange-200">
                     <FileText className="w-3 h-3" />
@@ -270,9 +271,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 8. Frequently Asked Questions */}
-        <section className="py-16 bg-slate-50/70 border-b border-slate-200">
-          <div className="max-w-[880px] mx-auto px-4 sm:px-6">
+        {/* 8. Frequently Asked Questions (Brand Cross Pattern Texture) */}
+        <section className="py-16 bg-slate-50/80 bg-brand-cross-pattern border-b border-slate-200 relative">
+          <div className="max-w-[880px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
                 Got Questions?
@@ -315,10 +316,10 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 9. Bottom CTA Section (Clean Orange/Light Card Container) */}
-        <section className="py-16 bg-white">
+        {/* 9. Bottom CTA Section (Clean Orange/Light Card with Micro Grid Texture) */}
+        <section className="py-16 bg-white relative">
           <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
-            <div className="rounded-3xl bg-gradient-to-br from-orange-50 via-amber-50/50 to-orange-50 border border-orange-200/90 p-8 sm:p-12 text-center space-y-4 shadow-sm">
+            <div className="rounded-3xl bg-gradient-to-br from-orange-50 via-amber-50/50 to-orange-50 bg-brand-grid-pattern border border-orange-200/90 p-8 sm:p-12 text-center space-y-4 shadow-sm relative overflow-hidden">
               <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange-500/15 text-orange-700 border border-orange-300 text-[11px] font-extrabold uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5 text-orange-600" />
                 <span>Fast-Track Processing</span>
