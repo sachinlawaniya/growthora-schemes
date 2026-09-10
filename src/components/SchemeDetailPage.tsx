@@ -39,19 +39,14 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </div>
 
-        {/* 2. Hero Section (Deep Navy #0D1836 with Metric Highlight Boxes) */}
-        <section className="bg-gradient-to-br from-[#0D1836] via-[#132247] to-[#070D1E] text-white pt-12 pb-16 border-b border-slate-800 relative overflow-hidden">
-          {/* Animated Background Textures */}
-          <div className="absolute inset-0 bg-grid-pattern-dark opacity-35 pointer-events-none" />
-          <div className="absolute top-0 right-1/4 w-[420px] h-[420px] bg-orange-500/20 rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
-          <div className="absolute bottom-0 left-10 w-80 h-80 bg-blue-500/15 rounded-full blur-2xl pointer-events-none animate-float-slow" />
-
+        {/* 2. Hero Section (Solid Deep Navy #0D1836 with Sharp Metric Highlight Boxes) */}
+        <section className="bg-[#0D1836] text-white pt-12 pb-16 border-b border-slate-800 relative">
           <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
               {/* Left Column: Heading & Info */}
               <div className="lg:col-span-7 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange-500/20 text-orange-300 border border-orange-400/30 text-[11px] font-extrabold uppercase tracking-wider backdrop-blur-xs">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange-500/15 text-orange-400 border border-orange-500/30 text-[11px] font-extrabold uppercase tracking-wider">
                   <Sparkles className="w-3.5 h-3.5 text-orange-400" />
                   <span>{pageData.categoryBadge}</span>
                 </div>
@@ -60,7 +55,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
                   {pageData.title}
                 </h1>
 
-                <p className="text-orange-300 text-sm font-semibold tracking-wide">
+                <p className="text-orange-400 text-sm font-bold tracking-wide">
                   {pageData.subtitle}
                 </p>
 
@@ -68,10 +63,10 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
                   {pageData.description}
                 </p>
 
-                <div className="pt-3 flex items-center gap-3">
+                <div className="pt-3 flex items-center gap-3.5">
                   <button
                     onClick={onOpenConsultation}
-                    className="shimmer-btn inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 text-white font-bold text-[14px] px-7 py-3.5 rounded-xl shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+                    className="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-[14px] px-7 py-3.5 rounded-xl shadow-md transition-all cursor-pointer"
                   >
                     <span>{pageData.applyLinkText}</span>
                     <ArrowRight className="w-4 h-4" />
@@ -79,21 +74,21 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
 
                   <a
                     href="tel:+919005427979"
-                    className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-semibold text-[13.5px] px-5 py-3.5 rounded-xl border border-white/15 transition-all"
+                    className="inline-flex items-center justify-center gap-2 bg-slate-800/80 hover:bg-slate-700 text-white font-bold text-[13.5px] px-5 py-3.5 rounded-xl border border-slate-700 transition-colors"
                   >
                     <span>Talk to Advisor</span>
                   </a>
                 </div>
               </div>
 
-              {/* Right Column: 4 Metric Highlight Boxes */}
+              {/* Right Column: 4 Sharp Metric Highlight Boxes */}
               <div className="lg:col-span-5 grid grid-cols-2 gap-3.5">
                 {pageData.metrics.map((metric, idx) => (
                   <div
                     key={idx}
-                    className="p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 shadow-xl hover:bg-white/15 hover:border-orange-400/40 hover:scale-[1.02] transition-all flex flex-col justify-between"
+                    className="p-5 rounded-2xl bg-[#112042] border border-slate-700 hover:border-orange-500/50 transition-colors shadow-sm flex flex-col justify-between"
                   >
-                    <span className="text-[11px] font-bold text-orange-300 uppercase tracking-wider block">
+                    <span className="text-[11px] font-bold text-orange-400 uppercase tracking-wider block">
                       {metric.label}
                     </span>
                     <strong className="text-xl sm:text-2xl font-heading font-extrabold text-white mt-2 block">
@@ -107,11 +102,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 3. "Who Can Apply?" Section (6 3D Cards Grid) */}
-        <section className="py-16 bg-white border-b border-slate-200/90 relative overflow-hidden">
-          <div className="absolute inset-0 bg-isometric-grid opacity-25 pointer-events-none" />
-
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
+        {/* 3. "Who Can Apply?" Section (6 Crisp White Cards Grid) */}
+        <section className="py-16 bg-white border-b border-slate-200">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-500 block mb-1">
                 Eligibility Assessment
@@ -124,13 +117,13 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 perspective-container">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {pageData.whoCanApply.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-3xl bg-white/95 backdrop-blur-xs shadow-md card-3d border border-slate-200/90 space-y-3"
+                  className="p-6 rounded-2xl bg-white border border-slate-200 hover:border-orange-300 hover:shadow-md transition-all space-y-2.5 shadow-2xs"
                 >
-                  <div className="w-9 h-9 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center font-extrabold text-sm border border-orange-200/80 shadow-2xs">
+                  <div className="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center font-extrabold text-xs border border-orange-200">
                     ✓
                   </div>
                   <h3 className="font-heading font-bold text-[16px] text-[#0D1836]">
@@ -145,12 +138,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 4. "Key Features" Section (Deep Navy Grid with 3D Glass Cards) */}
-        <section className="py-16 bg-gradient-to-br from-[#0D1836] via-[#142349] to-[#070D1E] text-white border-b border-slate-800 relative overflow-hidden">
-          <div className="absolute inset-0 bg-grid-pattern-dark opacity-35 pointer-events-none" />
-          <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-orange-500/15 rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
-
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
+        {/* 4. "Key Features" Section (Deep Navy Grid with Solid Cards) */}
+        <section className="py-16 bg-[#0D1836] text-white border-b border-slate-800">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-400 block mb-1">
                 Program Highlights
@@ -163,13 +153,13 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 perspective-container">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {pageData.keyFeatures.map((feat, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-3xl glass-panel-dark-3d hover:border-orange-400/50 hover:scale-[1.02] transition-all space-y-3"
+                  className="p-6 rounded-2xl bg-[#112042] border border-slate-700/90 hover:border-orange-400 transition-colors space-y-2.5 shadow-sm"
                 >
-                  <div className="w-9 h-9 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-sm border border-orange-400/30 shadow-2xs">
+                  <div className="w-8 h-8 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-xs border border-orange-400/30">
                     ✦
                   </div>
                   <h3 className="font-heading font-bold text-[16px] text-white">
@@ -184,11 +174,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 5. "Scheme Benefits" Section */}
-        <section className="py-16 bg-[#FAFAFA] border-b border-slate-200/90 relative overflow-hidden">
-          <div className="absolute inset-0 bg-isometric-grid opacity-25 pointer-events-none" />
-
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
+        {/* 5. "Scheme Benefits" Section (Solid Off-White Background) */}
+        <section className="py-16 bg-[#FAFAFA] border-b border-slate-200">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-500 block mb-1">
                 Advantages & Subsidies
@@ -198,13 +186,13 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4.5 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
               {pageData.benefits.map((b, idx) => (
                 <div
                   key={idx}
-                  className="p-4.5 rounded-2xl border border-slate-200/90 bg-white/95 backdrop-blur-xs flex items-start gap-3.5 shadow-xs hover:border-orange-300 hover:shadow-md transition-all card-3d"
+                  className="p-4 rounded-xl border border-slate-200 bg-white flex items-start gap-3 shadow-2xs hover:border-orange-300 hover:shadow-xs transition-all"
                 >
-                  <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 border border-orange-200">
+                  <span className="w-5 h-5 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 border border-orange-200">
                     ✓
                   </span>
                   <span className="text-[13.5px] text-slate-700 leading-relaxed font-medium">
@@ -216,11 +204,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 6. "Application Process" 4 Steps */}
-        <section className="py-16 bg-white border-b border-slate-200/90 relative overflow-hidden">
-          <div className="absolute inset-0 bg-isometric-grid opacity-25 pointer-events-none" />
-
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
+        {/* 6. "Application Process" 4 Steps (Solid Clean White) */}
+        <section className="py-16 bg-white border-b border-slate-200">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-500 block mb-1">
                 Step-by-Step Guide
@@ -230,14 +216,14 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 perspective-container">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {pageData.processSteps.map((p, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-3xl bg-white/95 backdrop-blur-xs shadow-md card-3d border border-slate-200/90 flex flex-col justify-between"
+                  className="p-6 rounded-2xl bg-[#FAFAFA] border border-slate-200 shadow-2xs flex flex-col justify-between"
                 >
                   <div>
-                    <span className="px-3 py-1 rounded-lg bg-gradient-to-r from-orange-500 to-amber-500 text-white font-extrabold text-xs inline-block mb-3.5 shadow-2xs">
+                    <span className="px-3 py-1 rounded-lg bg-orange-500 text-white font-extrabold text-xs inline-block mb-3.5 shadow-2xs">
                       Step {p.step}
                     </span>
                     <h3 className="font-heading font-bold text-[16px] text-[#0D1836] mb-2">
@@ -253,11 +239,9 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
           </div>
         </section>
 
-        {/* 7. "Documents Required" (Dark Navy Grid) */}
-        <section className="py-16 bg-gradient-to-br from-[#0D1836] via-[#122044] to-[#070D1E] text-white border-b border-slate-800 relative overflow-hidden">
-          <div className="absolute inset-0 bg-grid-pattern-dark opacity-35 pointer-events-none" />
-
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
+        {/* 7. "Documents Required" (Solid Deep Navy Grid) */}
+        <section className="py-16 bg-[#0D1836] text-white border-b border-slate-800">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-400 block mb-1">
                 Checklist
@@ -267,13 +251,13 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 max-w-4xl mx-auto">
               {pageData.documentsRequired.map((doc, idx) => (
                 <div
                   key={idx}
-                  className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3 text-[12.5px] text-slate-200 hover:bg-white/10 hover:border-orange-400/40 transition-colors"
+                  className="p-3.5 rounded-xl bg-[#112042] border border-slate-700 flex items-center gap-3 text-[12.5px] text-slate-200 hover:border-orange-400 transition-colors"
                 >
-                  <span className="w-5 h-5 rounded-full bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-xs shrink-0 border border-orange-400/30">
+                  <span className="w-4 h-4 rounded-full bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-xs shrink-0 border border-orange-400/30">
                     ✓
                   </span>
                   <span>{doc}</span>
@@ -284,8 +268,8 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         </section>
 
         {/* 8. Frequently Asked Questions */}
-        <section className="py-16 bg-white border-b border-slate-200/90 relative overflow-hidden">
-          <div className="max-w-[880px] mx-auto px-4 sm:px-6 relative z-10">
+        <section className="py-16 bg-white border-b border-slate-200">
+          <div className="max-w-[880px] mx-auto px-4 sm:px-6">
             <div className="text-center mb-12">
               <span className="text-xs font-extrabold uppercase tracking-wider text-orange-500 block mb-1">
                 Got Questions?
@@ -295,18 +279,18 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
               </h2>
             </div>
 
-            <div className="space-y-3.5">
+            <div className="space-y-3">
               {pageData.faqs.map((faq, idx) => {
                 const isOpen = openFaq === idx;
                 return (
                   <div
                     key={idx}
-                    className={`border rounded-2xl overflow-hidden transition-all shadow-xs ${isOpen ? 'border-orange-400/80 ring-2 ring-orange-500/20' : 'border-slate-200 bg-white'}`}
+                    className={`border rounded-xl overflow-hidden transition-all ${isOpen ? 'border-orange-500 shadow-xs' : 'border-slate-200 bg-white'}`}
                   >
                     <button
                       type="button"
                       onClick={() => setOpenFaq(isOpen ? null : idx)}
-                      className="w-full p-4.5 text-left font-bold text-[14.5px] text-[#0D1836] flex items-center justify-between gap-3 hover:bg-slate-50/80 transition-colors cursor-pointer"
+                      className="w-full p-4.5 text-left font-bold text-[14.5px] text-[#0D1836] flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors cursor-pointer"
                     >
                       <span>{faq.question}</span>
                       <ChevronDown
@@ -314,7 +298,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
                       />
                     </button>
                     {isOpen && (
-                      <div className="px-4.5 pb-4.5 pt-1 text-[13.5px] text-slate-600 border-t border-slate-100 bg-orange-50/30 leading-relaxed">
+                      <div className="px-4.5 pb-4.5 pt-1 text-[13.5px] text-slate-600 border-t border-slate-100 bg-orange-50/20 leading-relaxed">
                         {faq.answer}
                       </div>
                     )}
@@ -326,28 +310,25 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         </section>
 
         {/* 9. Bottom CTA Section */}
-        <section className="py-16 bg-gradient-to-r from-[#0D1836] via-[#16254a] to-[#091124] text-white border-t border-slate-800 relative overflow-hidden">
-          <div className="absolute inset-0 bg-grid-pattern-dark opacity-35 pointer-events-none" />
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl pointer-events-none animate-pulse-glow" />
-
-          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 text-center space-y-4 relative z-10">
+        <section className="py-16 bg-[#0D1836] text-white border-t border-slate-800">
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 text-center space-y-4">
             <h2 className="font-heading font-extrabold text-[26px] sm:text-[34px] text-white max-w-2xl mx-auto leading-tight">
               {pageData.ctaHeading}
             </h2>
             <p className="text-[14px] text-slate-300 max-w-xl mx-auto">
               {pageData.ctaSubheading}
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-3">
               <button
                 onClick={onOpenConsultation}
-                className="shimmer-btn inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 text-white font-bold text-[14px] px-8 py-4 rounded-xl shadow-xl shadow-orange-500/30 hover:shadow-orange-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-[14px] px-8 py-4 rounded-xl shadow-md transition-all cursor-pointer"
               >
                 <span>Apply Now</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
               <button
                 onClick={onBack}
-                className="px-7 py-4 rounded-xl border border-white/20 text-white text-[14px] font-bold hover:bg-white/10 transition-colors cursor-pointer"
+                className="px-7 py-4 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white text-[14px] font-bold transition-colors cursor-pointer"
               >
                 View All Schemes
               </button>
