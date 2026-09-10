@@ -182,7 +182,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
             </div>
 
             {/* Floating Live Metric Card */}
-            <div className="absolute -bottom-3 -left-3 sm:-left-5 bg-white rounded-2xl p-3 sm:p-3.5 shadow-lg border border-orange-200 animate-float-slow hidden sm:flex items-center gap-3">
+            <div className="absolute -bottom-10 -left-3 sm:-left-5 bg-white rounded-2xl p-3 sm:p-3.5 shadow-lg border border-orange-200 animate-float-slow hidden sm:flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold border border-emerald-200 shadow-2xs">
                 <CheckCircle2 className="w-5 h-5" />
               </div>
@@ -197,7 +197,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
             </div>
 
             {/* Floating Top Match Card */}
-            <div className="absolute -top-3 -right-3 sm:-right-5 bg-white rounded-2xl p-3 sm:p-3.5 shadow-lg border border-orange-200 animate-float-reverse hidden sm:flex items-center gap-3">
+            <div className="absolute -top-12 -right-3 sm:-right-5 bg-white rounded-2xl p-3 sm:p-3.5 shadow-lg border border-orange-200 animate-float-reverse hidden sm:flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center font-bold border border-orange-200 shadow-2xs">
                 <Sparkles className="w-5 h-5" />
               </div>
