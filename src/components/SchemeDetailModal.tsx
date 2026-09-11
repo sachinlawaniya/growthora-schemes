@@ -13,7 +13,7 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({ scheme, on
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/75 animate-fadeIn">
-      <div 
+      <div
         className="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden max-h-[90vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
@@ -27,11 +27,11 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({ scheme, on
             <X className="w-5 h-5" />
           </button>
 
-          <div className="inline-block px-2.5 py-0.5 rounded-md bg-orange-500/20 text-orange-300 border border-orange-400/30 text-[10px] font-extrabold uppercase tracking-wider mb-2">
+          <div className="inline-block px-2.5 py-0.5 rounded-md bg-orange-500/20 text-orange-300 border border-orange-400/30 text-[10px] font-bold uppercase tracking-wider mb-2">
             {scheme.badge} Scheme
           </div>
-          
-          <h2 className="text-xl sm:text-2xl font-extrabold font-heading text-white">
+
+          <h2 className="text-xl sm:text-2xl font-bold font-heading text-white">
             {scheme.fullName}
           </h2>
           <p className="text-slate-300 text-xs mt-1">
@@ -41,16 +41,16 @@ export const SchemeDetailModal: React.FC<SchemeDetailModalProps> = ({ scheme, on
 
         {/* Modal Content Scrollable Area */}
         <div className="p-6 overflow-y-auto space-y-6 text-slate-700">
-          
+
           {/* Key Metrics Strip */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 p-3.5 bg-orange-50/50 rounded-xl border border-orange-100">
             <div>
               <span className="text-[10.5px] font-bold text-slate-500 uppercase block">Funding Limit</span>
-              <strong className="text-[14px] font-extrabold text-orange-600">{scheme.fundingAmount}</strong>
+              <strong className="text-[14px] font-bold text-orange-600">{scheme.fundingAmount}</strong>
             </div>
             <div>
               <span className="text-[10.5px] font-bold text-slate-500 uppercase block">Subsidy / Support</span>
-              <strong className="text-[14px] font-extrabold text-[#0D1836]">{scheme.subsidyRate}</strong>
+              <strong className="text-[14px] font-bold text-[#0D1836]">{scheme.subsidyRate}</strong>
             </div>
             <div className="col-span-2 sm:col-span-1">
               <span className="text-[10.5px] font-bold text-slate-500 uppercase block">Status</span>

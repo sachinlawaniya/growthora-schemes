@@ -18,14 +18,14 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onOpenConsultation }) =>
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 via-amber-400 to-orange-600 animate-gradient-flow" />
 
           <div className="space-y-2.5 text-center md:text-left relative z-10">
-            <span className="text-[11px] font-extrabold uppercase tracking-widest text-orange-400 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/15 border border-orange-400/30">
+            <span className="text-[11px] font-bold uppercase tracking-widest text-orange-400 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/15 border border-orange-400/30">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500" />
               </span>
               Direct Advisor Connect
             </span>
-            <h2 className="font-heading font-extrabold text-[24px] sm:text-[32px] text-white leading-tight max-w-xl">
+            <h2 className="font-heading font-bold text-[24px] sm:text-[32px] text-white leading-tight max-w-xl">
               Ready to Explore Government Schemes for Your Business?
             </h2>
             <p className="text-[14px] text-slate-300 max-w-lg">

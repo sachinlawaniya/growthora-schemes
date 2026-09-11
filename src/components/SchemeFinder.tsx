@@ -103,7 +103,7 @@ export const SchemeFinder: React.FC<SchemeFinderProps> = ({ onFilterChange }) =>
 
       <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
         <div className="border border-slate-200/90 rounded-3xl p-6 sm:p-9 bg-white/95 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all relative overflow-hidden">
-          
+
           {/* Subtle top decorative animated gradient bar */}
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 animate-gradient-flow" />
           <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
@@ -111,11 +111,11 @@ export const SchemeFinder: React.FC<SchemeFinderProps> = ({ onFilterChange }) =>
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-6 border-b border-slate-100/90 relative z-10">
             <div>
-              <div className="text-[12px] font-extrabold uppercase tracking-wider text-orange-500 mb-1.5 flex items-center gap-1.5">
+              <div className="text-[12px] font-bold uppercase tracking-wider text-orange-500 mb-1.5 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
                 Find Your Opportunity
               </div>
-              <h2 className="font-heading font-extrabold text-[24px] sm:text-[30px] text-[#0D1836] tracking-tight">
+              <h2 className="font-heading font-bold text-[24px] sm:text-[30px] text-[#0D1836] tracking-tight">
                 Which Government Scheme Fits Your Business?
               </h2>
               <p className="text-[14px] text-slate-500 mt-1 max-w-2xl">
@@ -137,7 +137,7 @@ export const SchemeFinder: React.FC<SchemeFinderProps> = ({ onFilterChange }) =>
             {/* Step 1: What are you looking for? */}
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-[13px] font-bold text-[#0D1836]">
-                <span className="w-5 h-5 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[11px] font-extrabold flex items-center justify-center shadow-2xs">1</span>
+                <span className="w-5 h-5 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[11px] font-bold flex items-center justify-center shadow-2xs">1</span>
                 <span>What are you looking for?</span>
               </div>
 
@@ -151,8 +151,8 @@ export const SchemeFinder: React.FC<SchemeFinderProps> = ({ onFilterChange }) =>
                       type="button"
                       onClick={() => handleOptionChange('lookingFor', opt.label)}
                       className={`min-h-[70px] p-2 rounded-xl border text-center flex flex-col items-center justify-center gap-1.5 transition-all text-[11px] font-semibold cursor-pointer ${isSelected
-                          ? 'bg-orange-50 border-orange-500 text-orange-600 ring-2 ring-orange-500/25 shadow-xs scale-[1.02]'
-                          : 'bg-white/90 border-slate-200 text-slate-700 hover:border-orange-200 hover:bg-orange-50/40 hover:scale-[1.01]'
+                        ? 'bg-orange-50 border-orange-500 text-orange-600 ring-2 ring-orange-500/25 shadow-xs scale-[1.02]'
+                        : 'bg-white/90 border-slate-200 text-slate-700 hover:border-orange-200 hover:bg-orange-50/40 hover:scale-[1.01]'
                         }`}
                     >
                       <Icon className={`w-4 h-4 ${isSelected ? 'text-orange-500 scale-110' : 'text-slate-400'} transition-transform`} />
@@ -166,7 +166,7 @@ export const SchemeFinder: React.FC<SchemeFinderProps> = ({ onFilterChange }) =>
             {/* Step 2: What's your business type? */}
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-[13px] font-bold text-[#0D1836]">
-                <span className="w-5 h-5 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[11px] font-extrabold flex items-center justify-center shadow-2xs">2</span>
+                <span className="w-5 h-5 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[11px] font-bold flex items-center justify-center shadow-2xs">2</span>
                 <span>What's your business type?</span>
               </div>
 
@@ -180,8 +180,8 @@ export const SchemeFinder: React.FC<SchemeFinderProps> = ({ onFilterChange }) =>
                       type="button"
                       onClick={() => handleOptionChange('businessType', opt.label)}
                       className={`min-h-[70px] p-2 rounded-xl border text-center flex flex-col items-center justify-center gap-1.5 transition-all text-[11px] font-semibold cursor-pointer ${isSelected
-                          ? 'bg-orange-50 border-orange-500 text-orange-600 ring-2 ring-orange-500/25 shadow-xs scale-[1.02]'
-                          : 'bg-white/90 border-slate-200 text-slate-700 hover:border-orange-200 hover:bg-orange-50/40 hover:scale-[1.01]'
+                        ? 'bg-orange-50 border-orange-500 text-orange-600 ring-2 ring-orange-500/25 shadow-xs scale-[1.02]'
+                        : 'bg-white/90 border-slate-200 text-slate-700 hover:border-orange-200 hover:bg-orange-50/40 hover:scale-[1.01]'
                         }`}
                     >
                       <Icon className={`w-4 h-4 ${isSelected ? 'text-orange-500 scale-110' : 'text-slate-400'} transition-transform`} />
@@ -195,7 +195,7 @@ export const SchemeFinder: React.FC<SchemeFinderProps> = ({ onFilterChange }) =>
             {/* Step 3: How much funding do you need? */}
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-[13px] font-bold text-[#0D1836]">
-                <span className="w-5 h-5 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[11px] font-extrabold flex items-center justify-center shadow-2xs">3</span>
+                <span className="w-5 h-5 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[11px] font-bold flex items-center justify-center shadow-2xs">3</span>
                 <span>How much funding do you need?</span>
               </div>
 
@@ -208,8 +208,8 @@ export const SchemeFinder: React.FC<SchemeFinderProps> = ({ onFilterChange }) =>
                       type="button"
                       onClick={() => handleOptionChange('fundingAmount', opt)}
                       className={`min-h-[70px] p-2 rounded-xl border text-center flex items-center justify-center transition-all text-[11px] font-bold cursor-pointer ${isSelected
-                          ? 'bg-orange-50 border-orange-500 text-orange-600 ring-2 ring-orange-500/25 shadow-xs scale-[1.02]'
-                          : 'bg-white/90 border-slate-200 text-slate-700 hover:border-orange-200 hover:bg-orange-50/40 hover:scale-[1.01]'
+                        ? 'bg-orange-50 border-orange-500 text-orange-600 ring-2 ring-orange-500/25 shadow-xs scale-[1.02]'
+                        : 'bg-white/90 border-slate-200 text-slate-700 hover:border-orange-200 hover:bg-orange-50/40 hover:scale-[1.01]'
                         }`}
                     >
                       <span className="leading-tight">{opt}</span>

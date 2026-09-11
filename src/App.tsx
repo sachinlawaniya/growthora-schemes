@@ -123,6 +123,7 @@ export function App() {
           pageData={currentSchemePageData}
           onBack={handleBackToDirectory}
           onOpenConsultation={() => setIsConsultationOpen(true)}
+          onSelectScheme={handleSelectScheme}
         />
         <ConsultationModal
           isOpen={isConsultationOpen}
@@ -136,7 +137,11 @@ export function App() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FAFAFA]">
       {/* 1. Header & Navigation */}
-      <Navbar onOpenConsultation={() => setIsConsultationOpen(true)} />
+      <Navbar
+        onOpenConsultation={() => setIsConsultationOpen(true)}
+        onNavigateHome={handleBackToDirectory}
+        onSelectScheme={handleSelectScheme}
+      />
 
       {/* Main Directory Page */}
       <main className="flex-1">

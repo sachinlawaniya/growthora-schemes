@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
                 />
               </span>
               <div>
-                <span className="font-heading font-extrabold text-[22px] tracking-tight text-[#0D1836] leading-none block">
+                <span className="font-heading font-bold text-[22px] tracking-tight text-[#0D1836] leading-none block">
                   Growthora
                 </span>
                 <span className="text-[7.5px] font-bold tracking-[0.18em] text-orange-600 uppercase block mt-0.5">
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="text-[12px] font-extrabold uppercase tracking-wider text-orange-500">
+            <h4 className="text-[12px] font-bold uppercase tracking-wider text-orange-500">
               Quick Links
             </h4>
             <ul className="space-y-2 text-[12.5px] text-slate-600">
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
 
           {/* Popular Schemes */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-[12px] font-extrabold uppercase tracking-wider text-orange-500">
+            <h4 className="text-[12px] font-bold uppercase tracking-wider text-orange-500">
               Popular Schemes
             </h4>
             <ul className="space-y-2 text-[12.5px] text-slate-600">
@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
 
           {/* Newsletter Box */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-[12px] font-extrabold uppercase tracking-wider text-orange-500">
+            <h4 className="text-[12px] font-bold uppercase tracking-wider text-orange-500">
               Newsletter
             </h4>
             <p className="text-[12px] text-slate-500 leading-relaxed">

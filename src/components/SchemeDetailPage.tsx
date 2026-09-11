@@ -8,19 +8,25 @@ interface SchemeDetailPageProps {
   pageData: SchemePageData;
   onBack: () => void;
   onOpenConsultation: () => void;
+  onSelectScheme?: (slug: string) => void;
 }
 
 export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
   pageData,
   onBack,
   onOpenConsultation,
+  onSelectScheme,
 }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-slate-900">
       {/* 1. Navbar */}
-      <Navbar onOpenConsultation={onOpenConsultation} onNavigateHome={onBack} />
+      <Navbar
+        onOpenConsultation={onOpenConsultation}
+        onNavigateHome={onBack}
+        onSelectScheme={onSelectScheme}
+      />
 
       <main className="flex-1">
         {/* Back navigation breadcrumb bar */}
@@ -41,7 +47,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
 
         {/* 2. Hero Section (Rich Warm Orange & Cream Theme with 3D Grid Texture) */}
         <section className="bg-gradient-to-b from-[#FFF3E5] via-[#FFF9F3] to-[#FAF8F5] border-b border-orange-200/80 pt-12 pb-16 relative overflow-hidden">
-          
+
           {/* Visible Warm Orange Grid SVG */}
           <div className="absolute inset-0 pointer-events-none opacity-50">
             <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -60,12 +66,12 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
 
               {/* Left Column: Heading & Information */}
               <div className="lg:col-span-7 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-orange-700 border border-orange-300 text-[11px] font-extrabold uppercase tracking-wider shadow-sm">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-orange-700 border border-orange-300 text-[11px] font-bold uppercase tracking-wider shadow-sm">
                   <Sparkles className="w-3.5 h-3.5 text-orange-600" />
                   <span>{pageData.categoryBadge}</span>
                 </div>
 
-                <h1 className="font-heading font-extrabold text-[32px] sm:text-[40px] md:text-[46px] leading-[1.12] tracking-tight text-slate-900">
+                <h1 className="font-heading font-bold text-[32px] sm:text-[40px] md:text-[46px] leading-[1.12] tracking-tight text-slate-900">
                   {pageData.title}
                 </h1>
 
@@ -107,7 +113,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
                     <span className="text-[11px] font-bold text-orange-700 uppercase tracking-wider block relative z-10">
                       {metric.label}
                     </span>
-                    <strong className="text-xl sm:text-2xl font-heading font-extrabold text-slate-900 mt-2 block relative z-10">
+                    <strong className="text-xl sm:text-2xl font-heading font-bold text-slate-900 mt-2 block relative z-10">
                       {metric.value}
                     </strong>
                   </div>
@@ -122,10 +128,10 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         <section className="py-16 bg-white bg-brand-dot-pattern border-b border-orange-100 relative">
           <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-orange-600 block mb-1">
                 Eligibility Assessment
               </span>
-              <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] text-slate-900">
+              <h2 className="font-heading font-bold text-[28px] sm:text-[36px] text-slate-900">
                 Who Can <span className="text-orange-600">Apply?</span>
               </h2>
               <p className="text-sm text-slate-600 max-w-xl mx-auto mt-1">
@@ -139,7 +145,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
                   key={idx}
                   className="p-6 rounded-2xl bg-[#FFFBF5] border border-orange-200 hover:bg-white hover:border-orange-400 hover:shadow-md transition-all space-y-2.5 shadow-xs"
                 >
-                  <div className="w-8 h-8 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center font-extrabold text-xs border border-orange-200">
+                  <div className="w-8 h-8 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-xs border border-orange-200">
                     <Check className="w-4 h-4" />
                   </div>
                   <h3 className="font-heading font-bold text-[16px] text-slate-900">
@@ -158,10 +164,10 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         <section className="py-16 bg-[#FFF8F0] bg-brand-cross-pattern border-b border-orange-100 relative">
           <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-orange-600 block mb-1">
                 Program Highlights
               </span>
-              <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] text-slate-900">
+              <h2 className="font-heading font-bold text-[28px] sm:text-[36px] text-slate-900">
                 Key <span className="text-orange-600">Features</span>
               </h2>
               <p className="text-sm text-slate-600 max-w-xl mx-auto mt-1">
@@ -194,10 +200,10 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         <section className="py-16 bg-white border-b border-orange-100 relative">
           <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-orange-600 block mb-1">
                 Advantages & Subsidies
               </span>
-              <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] text-slate-900">
+              <h2 className="font-heading font-bold text-[28px] sm:text-[36px] text-slate-900">
                 Scheme <span className="text-orange-600">Benefits</span>
               </h2>
             </div>
@@ -224,10 +230,10 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         <section className="py-16 bg-[#FFF8F0] bg-brand-grid-pattern border-b border-orange-100 relative">
           <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-orange-600 block mb-1">
                 Step-by-Step Guide
               </span>
-              <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] text-slate-900">
+              <h2 className="font-heading font-bold text-[28px] sm:text-[36px] text-slate-900">
                 Application <span className="text-orange-600">Process</span>
               </h2>
             </div>
@@ -239,7 +245,7 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
                   className="p-6 rounded-2xl bg-white border border-orange-200 shadow-sm hover:border-orange-400 hover:shadow-md transition-all flex flex-col justify-between"
                 >
                   <div>
-                    <span className="px-3 py-1 rounded-lg bg-gradient-to-r from-orange-500 to-amber-500 text-white font-extrabold text-xs inline-block mb-3.5 shadow-sm">
+                    <span className="px-3 py-1 rounded-lg bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold text-xs inline-block mb-3.5 shadow-sm">
                       Step {p.step}
                     </span>
                     <h3 className="font-heading font-bold text-[16px] text-slate-900 mb-2">
@@ -259,10 +265,10 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         <section className="py-16 bg-white bg-brand-dot-pattern border-b border-orange-100 relative">
           <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-orange-600 block mb-1">
                 Checklist
               </span>
-              <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] text-slate-900">
+              <h2 className="font-heading font-bold text-[28px] sm:text-[36px] text-slate-900">
                 Documents <span className="text-orange-600">Required</span>
               </h2>
               <p className="text-sm text-slate-600 max-w-xl mx-auto mt-1">
@@ -290,10 +296,10 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         <section className="py-16 bg-[#FFF8F0] border-b border-orange-100 relative">
           <div className="max-w-[880px] mx-auto px-4 sm:px-6 relative z-10">
             <div className="text-center mb-12">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-orange-600 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-orange-600 block mb-1">
                 Got Questions?
               </span>
-              <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] text-slate-900">
+              <h2 className="font-heading font-bold text-[28px] sm:text-[36px] text-slate-900">
                 Frequently Asked <span className="text-orange-600">Questions</span>
               </h2>
             </div>
@@ -335,12 +341,12 @@ export const SchemeDetailPage: React.FC<SchemeDetailPageProps> = ({
         <section className="py-16 bg-white relative">
           <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
             <div className="rounded-3xl bg-gradient-to-br from-[#FFF3E5] via-[#FEF3C7] to-[#FFF3E5] border border-orange-300 p-8 sm:p-12 text-center space-y-4 shadow-sm relative overflow-hidden">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/15 text-orange-800 border border-orange-300 text-[11px] font-extrabold uppercase tracking-wider">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/15 text-orange-800 border border-orange-300 text-[11px] font-bold uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5 text-orange-600" />
                 <span>Fast-Track Processing</span>
               </span>
 
-              <h2 className="font-heading font-extrabold text-[26px] sm:text-[34px] text-slate-900 max-w-2xl mx-auto leading-tight">
+              <h2 className="font-heading font-bold text-[26px] sm:text-[34px] text-slate-900 max-w-2xl mx-auto leading-tight">
                 {pageData.ctaHeading}
               </h2>
               <p className="text-[14px] text-slate-700 max-w-xl mx-auto font-medium">

@@ -46,11 +46,11 @@ export const SupportSection: React.FC<SupportSectionProps> = ({ onOpenConsultati
             <div className="absolute -bottom-16 -left-16 w-56 h-56 bg-blue-500/15 rounded-full blur-3xl pointer-events-none animate-float-slow" />
 
             <div className="relative z-10">
-              <span className="text-[11px] font-extrabold uppercase tracking-widest text-orange-400 mb-2.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/15 border border-orange-400/30">
+              <span className="text-[11px] font-bold uppercase tracking-widest text-orange-400 mb-2.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/15 border border-orange-400/30">
                 <Sparkles className="w-3.5 h-3.5 text-orange-400" />
                 More Than Schemes
               </span>
-              <h2 className="font-heading font-extrabold text-[26px] sm:text-[32px] leading-tight text-white mb-3 mt-1">
+              <h2 className="font-heading font-bold text-[26px] sm:text-[32px] leading-tight text-white mb-3 mt-1">
                 End-to-End Support for Your Funding Journey
               </h2>
               <p className="text-[13.5px] text-slate-300 leading-relaxed max-w-sm mb-6">
@@ -102,12 +102,12 @@ export const SupportSection: React.FC<SupportSectionProps> = ({ onOpenConsultati
               <div className="absolute top-0 right-0 w-24 h-24 bg-orange-500/20 rounded-full blur-xl animate-pulse-glow" />
 
               <div className="relative z-10">
-                <span className="text-[10px] font-extrabold uppercase tracking-widest text-orange-400 block">Growthora</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-orange-400 block">Growthora</span>
                 <span className="text-[13.5px] font-bold text-white block mt-0.5 leading-snug">Advisory Network</span>
               </div>
-              
+
               <div className="relative z-10 bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl p-2.5 text-center shadow-md animate-float-slow">
-                <strong className="text-[12px] font-extrabold block text-white">Your Growth</strong>
+                <strong className="text-[12px] font-bold block text-white">Your Growth</strong>
                 <span className="text-[9.5px] text-orange-100 flex items-center justify-center gap-1 mt-0.5 font-bold">
                   Our Support ↗
                 </span>

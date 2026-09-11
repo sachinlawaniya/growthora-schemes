@@ -32,10 +32,10 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({
         {/* Section Heading */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-7">
           <div>
-            <span className="text-[12px] font-extrabold uppercase tracking-wider text-orange-500 block mb-1">
+            <span className="text-[12px] font-bold uppercase tracking-wider text-orange-500 block mb-1">
               Explore Schemes by Category
             </span>
-            <h2 className="font-heading font-extrabold text-[26px] sm:text-[32px] text-[#0D1836] tracking-tight">
+            <h2 className="font-heading font-bold text-[26px] sm:text-[32px] text-[#0D1836] tracking-tight">
               Browse Government Schemes
             </h2>
             <p className="text-[14px] text-slate-500 mt-1 max-w-2xl">
@@ -64,8 +64,8 @@ export const CategoriesSection: React.FC<CategoriesSectionProps> = ({
                 type="button"
                 onClick={() => onSelectCategory(isSelected ? null : cat.id)}
                 className={`min-h-[120px] rounded-2xl p-3.5 flex flex-col items-center justify-center text-center transition-all cursor-pointer group card-3d ${isSelected
-                    ? 'bg-orange-50/95 border-orange-500 ring-2 ring-orange-500/30 scale-[1.03]'
-                    : 'bg-white/95 backdrop-blur-xs border-slate-200/80 hover:border-orange-300'
+                  ? 'bg-orange-50/95 border-orange-500 ring-2 ring-orange-500/30 scale-[1.03]'
+                  : 'bg-white/95 backdrop-blur-xs border-slate-200/80 hover:border-orange-300'
                   }`}
               >
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-2.5 shadow-2xs transition-all ${isSelected ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-md' : 'bg-orange-50 text-orange-600 border border-orange-100 group-hover:scale-110 group-hover:bg-orange-500 group-hover:text-white'

@@ -62,10 +62,10 @@ export const SchemesGrid: React.FC<SchemesGridProps> = ({
         {/* Section Heading */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
-            <span className="text-[12px] font-extrabold uppercase tracking-wider text-orange-500 block mb-1">
+            <span className="text-[12px] font-bold uppercase tracking-wider text-orange-500 block mb-1">
               Featured Government Schemes
             </span>
-            <h2 className="font-heading font-extrabold text-[26px] sm:text-[32px] text-[#0D1836] tracking-tight">
+            <h2 className="font-heading font-bold text-[26px] sm:text-[32px] text-[#0D1836] tracking-tight">
               Popular Schemes for Indian Businesses
             </h2>
             <p className="text-[14px] text-slate-500 mt-1 max-w-2xl">
@@ -86,7 +86,7 @@ export const SchemesGrid: React.FC<SchemesGridProps> = ({
                 ⚡
               </span>
               <div className="text-xs font-bold text-[#0D1836]">
-                Filtered Results: <span className="text-orange-600 font-extrabold">
+                Filtered Results: <span className="text-orange-600 font-bold">
                   {activeFilters.lookingFor} • {activeFilters.businessType} • {activeFilters.fundingAmount}
                 </span>
                 <span className="text-slate-500 ml-1.5 font-medium">
@@ -122,11 +122,11 @@ export const SchemesGrid: React.FC<SchemesGridProps> = ({
               {/* Badge & Bookmark */}
               <div className="flex items-center justify-between mb-3.5">
                 <div className="flex items-center gap-1.5">
-                  <span className="px-3 py-1 rounded-full text-[10.5px] font-extrabold uppercase tracking-wider bg-orange-50 text-orange-700 border border-orange-200 shadow-2xs">
+                  <span className="px-3 py-1 rounded-full text-[10.5px] font-bold uppercase tracking-wider bg-orange-50 text-orange-700 border border-orange-200 shadow-2xs">
                     {scheme.badge}
                   </span>
                   {scheme.matchScore && scheme.matchScore >= 65 && (
-                    <span className="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-2xs">
+                    <span className="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-2xs">
                       ★ Top Match
                     </span>
                   )}
@@ -147,7 +147,7 @@ export const SchemesGrid: React.FC<SchemesGridProps> = ({
               {/* Main Info */}
               <div>
                 <div className="flex gap-3.5 items-center my-3">
-                  <div className="w-[54px] h-[54px] rounded-2xl flex items-center justify-center font-extrabold text-orange-600 bg-gradient-to-br from-orange-50 to-amber-50/50 border border-orange-200/80 text-[11.5px] text-center p-1.5 shadow-xs group-hover:scale-110 group-hover:shadow-md transition-all shrink-0">
+                  <div className="w-[54px] h-[54px] rounded-2xl flex items-center justify-center font-bold text-orange-600 bg-gradient-to-br from-orange-50 to-amber-50/50 border border-orange-200/80 text-[11.5px] text-center p-1.5 shadow-xs group-hover:scale-110 group-hover:shadow-md transition-all shrink-0">
                     {scheme.logoText}
                   </div>
                   <div>
@@ -181,14 +181,14 @@ export const SchemesGrid: React.FC<SchemesGridProps> = ({
               {/* Footer */}
               <div className="flex items-center justify-between gap-3 pt-3.5 border-t border-slate-100 text-[11.5px] mt-auto">
                 <div>
-                  <b className="block text-[13px] font-extrabold text-slate-900">
+                  <b className="block text-[13px] font-bold text-slate-900">
                     {scheme.fundingAmount}
                   </b>
                   <span className="text-[10px] text-slate-500">Funding Support</span>
                 </div>
 
                 <div>
-                  <b className="block text-[13px] font-extrabold text-orange-500">
+                  <b className="block text-[13px] font-bold text-orange-500">
                     {scheme.subsidyRate}
                   </b>
                   <span className="text-[10px] text-slate-500">Incentive</span>

@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenConsultation }) => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#FFF5EA] via-[#FFFBF6] to-[#FAF6F0] border-b border-orange-200/90 pt-12 pb-14 sm:pt-16 sm:pb-20 text-slate-900">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#FFF5EA] via-[#FFFBF6] to-[#FAF6F0] border-b border-orange-200/90 pt-5 pb-8 sm:pt-10 sm:pb-10 text-slate-900">
       
       {/* 1. Dynamic SVG Topographic Elevation Wave Vectors */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -71,13 +71,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
       <div className="absolute -bottom-16 -left-16 w-[450px] h-[450px] bg-gradient-to-tr from-amber-400/15 via-orange-300/15 to-transparent rounded-full pointer-events-none" />
 
       <div className="max-w-[1380px] mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[460px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
           
           {/* Left Column: Copy & Actions */}
           <div className="lg:col-span-6 flex flex-col justify-center">
             
             {/* Eyebrow badge with live pulse indicator */}
-            <div className="inline-flex items-center gap-2 mb-4">
+            <div className="inline-flex items-center gap-2 mb-2.5 sm:mb-3">
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-orange-700 text-[11.5px] font-extrabold uppercase tracking-wider border border-orange-300 shadow-sm">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
@@ -89,7 +89,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-heading font-extrabold text-[32px] sm:text-[40px] md:text-[48px] leading-[1.08] tracking-tight text-slate-900 mb-4">
+            <h1 className="font-heading font-extrabold text-[32px] sm:text-[38px] md:text-[44px] leading-[1.08] tracking-tight text-slate-900 mb-3">
               Find the{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-orange-500 relative inline-block">
                 Right Scheme
@@ -99,12 +99,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
             </h1>
 
             {/* Subtitle */}
-            <p className="text-slate-700 text-[14.5px] sm:text-[15.5px] leading-relaxed max-w-[580px] mb-7 font-medium">
+            <p className="text-slate-700 text-[14.5px] sm:text-[15px] leading-relaxed max-w-[580px] mb-5 font-medium">
               Explore 100+ verified government schemes, capital subsidies, and collateral-free credit support programs designed for Indian MSMEs, startups, and growing enterprises.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-6">
               <button
                 onClick={onFindScheme}
                 className="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-orange-500 via-orange-600 to-amber-500 text-white font-bold text-[14.5px] px-7 py-3.5 rounded-xl shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
@@ -123,7 +123,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
             </div>
 
             {/* Mini Trust Badges (4 Columns in Crisp Card Container) */}
-            <div className="p-3.5 bg-white/95 rounded-2xl border border-orange-200/90 shadow-sm grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+            <div className="p-3 bg-white/95 rounded-2xl border border-orange-200/90 shadow-sm grid grid-cols-2 sm:grid-cols-4 gap-2.5">
               <div className="flex items-center gap-2 p-1">
                 <div className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center text-orange-700 shrink-0 border border-orange-200 shadow-2xs">
                   <Building className="w-4 h-4" />
@@ -168,7 +168,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
           </div>
 
           {/* Right Column: Hero Visual Image with Polished Floating Cards */}
-          <div className="lg:col-span-6 relative flex items-center justify-center">
+          <div className="lg:col-span-6 relative flex items-center justify-center pt-2 pb-2">
             
             {/* Ambient decorative border highlight around visual */}
             <div className="relative w-full max-w-[560px] rounded-2xl overflow-hidden shadow-xl border border-orange-200 bg-white group">
@@ -182,30 +182,30 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onFindScheme, onOpenCo
             </div>
 
             {/* Floating Live Metric Card */}
-            <div className="absolute -bottom-10 -left-3 sm:-left-5 bg-white rounded-2xl p-3 sm:p-3.5 shadow-lg border border-orange-200 animate-float-slow hidden sm:flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold border border-emerald-200 shadow-2xs">
-                <CheckCircle2 className="w-5 h-5" />
+            <div className="absolute -bottom-3 -left-2 sm:-left-4 bg-white rounded-2xl p-2.5 sm:p-3 shadow-lg border border-orange-200 animate-float-slow hidden sm:flex items-center gap-2.5 z-20">
+              <div className="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold border border-emerald-200 shadow-2xs">
+                <CheckCircle2 className="w-4 h-4" />
               </div>
               <div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-800 block">
+                <span className="text-[9.5px] font-extrabold uppercase tracking-wider text-emerald-800 block">
                   100% Verified Schemes
                 </span>
-                <span className="text-[12.5px] font-bold text-slate-900">
+                <span className="text-[12px] font-bold text-slate-900">
                   Up to ₹50L+ Max Subsidies
                 </span>
               </div>
             </div>
 
             {/* Floating Top Match Card */}
-            <div className="absolute -top-12 -right-3 sm:-right-5 bg-white rounded-2xl p-3 sm:p-3.5 shadow-lg border border-orange-200 animate-float-reverse hidden sm:flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center font-bold border border-orange-200 shadow-2xs">
-                <Sparkles className="w-5 h-5" />
+            <div className="absolute -top-3 -right-2 sm:-right-4 bg-white rounded-2xl p-2.5 sm:p-3 shadow-lg border border-orange-200 animate-float-reverse hidden sm:flex items-center gap-2.5 z-20">
+              <div className="w-8 h-8 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center font-bold border border-orange-200 shadow-2xs">
+                <Sparkles className="w-4 h-4" />
               </div>
               <div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-orange-800 block">
+                <span className="text-[9.5px] font-extrabold uppercase tracking-wider text-orange-800 block">
                   Fast Approvals
                 </span>
-                <span className="text-[12.5px] font-bold text-slate-900">
+                <span className="text-[12px] font-bold text-slate-900">
                   Dedicated DPR Support
                 </span>
               </div>

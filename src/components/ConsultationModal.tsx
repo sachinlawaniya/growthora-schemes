@@ -28,7 +28,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/75 animate-fadeIn">
-      <div 
+      <div
         className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
@@ -42,10 +42,10 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
             <X className="w-5 h-5" />
           </button>
 
-          <span className="text-[11px] font-extrabold uppercase tracking-wider text-orange-400 block mb-1">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-orange-400 block mb-1">
             Growthora Advisory
           </span>
-          <h2 className="text-xl sm:text-2xl font-extrabold font-heading text-white">
+          <h2 className="text-xl sm:text-2xl font-bold font-heading text-white">
             Book Free Scheme Consultation
           </h2>
           <p className="text-slate-300 text-xs mt-1">

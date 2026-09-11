@@ -13,10 +13,10 @@ export const SuccessStories: React.FC = () => {
         {/* Heading */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
-            <span className="text-[12px] font-extrabold uppercase tracking-wider text-orange-500 block mb-1">
+            <span className="text-[12px] font-bold uppercase tracking-wider text-orange-500 block mb-1">
               Success Stories
             </span>
-            <h2 className="font-heading font-extrabold text-[26px] sm:text-[32px] text-[#0D1836] tracking-tight">
+            <h2 className="font-heading font-bold text-[26px] sm:text-[32px] text-[#0D1836] tracking-tight">
               Trusted by 5,000+ Businesses Across India
             </h2>
             <p className="text-[14px] text-slate-500 mt-1 max-w-2xl">
@@ -60,7 +60,7 @@ export const SuccessStories: React.FC = () => {
 
               {/* Author & Designation */}
               <div className="flex items-center gap-3.5 pt-4 border-t border-slate-100 mt-auto">
-                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 text-white font-extrabold text-[14px] flex items-center justify-center shrink-0 shadow-md">
+                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 text-white font-bold text-[14px] flex items-center justify-center shrink-0 shadow-md">
                   {story.avatar}
                 </div>
                 <div>

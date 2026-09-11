@@ -1179,13 +1179,279 @@ export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
     ],
     ctaHeading: "Ready to Apply for MSME ZED Scheme: Get Up to 80% Subsidy for Zero Defect Zero Effect Certification?",
     ctaSubheading: "Get expert factory assessment, documentation support, and complete assistance for ZED certification."
+  },
+  "nsic-schemes": {
+    slug: "nsic-schemes",
+    categoryBadge: "Govt Procurement & Marketing",
+    title: "NSIC Single Point Registration & Raw Material Assistance Scheme",
+    subtitle: "National Small Industries Corporation (NSIC)",
+    description: "Enables MSMEs to participate in Government Purchases, GeM Tenders with EMD waivers, and access raw material financing at subsidized interest rates.",
+    applyLinkText: "Apply via NSIC →",
+    metrics: [
+      { label: "EMD Exemption", value: "100% Free" },
+      { label: "Tender Set-aside", value: "358 Items" },
+      { label: "RMA Finance", value: "Up to ₹5 Cr" },
+      { label: "Processing", value: "15-20 Days" }
+    ],
+    whoCanApply: [
+      { title: "Eligible Units", description: "Micro and small manufacturing and service enterprises holding valid Udyam Registration." },
+      { title: "Commercial Production", description: "Enterprises having commercial production capability or service delivery capacity." },
+      { title: "GeM Enrolment", description: "MSMEs willing to supply goods and services to Central Ministries, PSUs, and Defense." }
+    ],
+    keyFeatures: [
+      { title: "Tender Fee & EMD Waiver", description: "100% exemption from payment of Earnest Money Deposit (EMD) and tender document fees in all PSU tenders." },
+      { title: "Price Preference (L1+15%)", description: "Eligible for purchase preference up to 25% of total tender quantity when price is within L1+15% band." },
+      { title: "Raw Material Assistance (RMA)", description: "Financial support for procurement of indigenous and imported raw materials like steel, aluminum, polymers." }
+    ],
+    benefits: [
+      "No need to lock capital in tender Earnest Money Deposits (EMD).",
+      "Direct access to Central Government and PSU procurement quotas.",
+      "Cash credit and bill discounting assistance for supply orders.",
+      "Subsidized testing and quality verification support at NSIC labs."
+    ],
+    processSteps: [
+      { step: "01", title: "Online Application", description: "Submit application on NSIC portal with manufacturing capacity details." },
+      { step: "02", title: "Technical Inspection", description: "Factory inspection by nominated inspecting agency (RITES, MSME-DFO, etc.)." },
+      { step: "03", title: "Certificate Issuance", description: "Issuance of SPRS Certificate with quantitative capacity endorsement." }
+    ],
+    documentsRequired: [
+      "Udyam Registration Certificate",
+      "List of Plant & Machinery with purchase invoices",
+      "Audited Financial Statements for last 3 years",
+      "Proof of ownership/lease of factory premises",
+      "Quality standards/ISO certificates if applicable"
+    ],
+    faqs: [
+      { question: "What is NSIC Single Point Registration Scheme (SPRS)?", answer: "SPRS is a flagship scheme enabling MSMEs to participate in Central/State Government tenders with complete EMD waiver and price preference." },
+      { question: "What is Raw Material Assistance (RMA)?", answer: "RMA provides credit support up to 90/180 days for purchasing essential bulk industrial raw materials through NSIC." }
+    ],
+    ctaHeading: "Get NSIC Registration & Raw Material Support with Growthora",
+    ctaSubheading: "We handle complete documentation, inspection preparation, and tender advisory for your business."
+  },
+  "cgss": {
+    slug: "cgss",
+    categoryBadge: "Credit Guarantee for Startups",
+    title: "Credit Guarantee Scheme for Startups (CGSS) – Collateral-Free Loans up to ₹10 Crore",
+    subtitle: "Department for Promotion of Industry and Internal Trade (DPIIT)",
+    description: "Government credit guarantee providing collateral-free debt financing up to ₹10 Crore to DPIIT-recognized startups through scheduled commercial banks and Venture Debt Funds.",
+    applyLinkText: "Check CGSS Eligibility →",
+    metrics: [
+      { label: "Max Loan", value: "Up to ₹10 Cr" },
+      { label: "Guarantee Cover", value: "Up to 80%" },
+      { label: "Collateral", value: "Nil / Zero" },
+      { label: "Target", value: "DPIIT Startups" }
+    ],
+    whoCanApply: [
+      { title: "DPIIT Recognition", description: "Must hold an active DPIIT Startup Certificate." },
+      { title: "Revenue Criteria", description: "Startups with certified stable revenue streams or venture backing." },
+      { title: "Default Status", description: "The startup must not be in default to any lending institution." }
+    ],
+    keyFeatures: [
+      { title: "Transaction-Based Guarantee", description: "Up to 80% guarantee coverage for loans up to ₹3 Crore, and 75% for loans above ₹3 Crore up to ₹5 Crore." },
+      { title: "Umbrella Guarantee for VDFs", description: "Covers venture debt funds investing in high-growth innovative startups." },
+      { title: "Working Capital & Term Debt", description: "Funds can be utilized for scale-up, capex, inventory, and market expansion." }
+    ],
+    benefits: [
+      "Access up to ₹10 Crore debt without diluting equity shares.",
+      "No mortgage of immovable personal or commercial property required.",
+      "Fast-track appraisal via partnered nationalized and private banks."
+    ],
+    processSteps: [
+      { step: "01", title: "DPIIT Verification", description: "Validate startup recognition status and revenue credentials." },
+      { step: "02", title: "Project Proposal & DPR", description: "Prepare growth model, cash flow forecasts, and debt service plan." },
+      { step: "03", title: "Bank Sanction & NCGTC Guarantee", description: "Bank sanctions loan and obtains CGSS guarantee cover through NCGTC." }
+    ],
+    documentsRequired: [
+      "DPIIT Certificate of Recognition",
+      "Audited Financial Statements & GST Returns",
+      "Business Pitch Deck & Detailed Project Report",
+      "Bank Statements for last 12 months"
+    ],
+    faqs: [
+      { question: "What is the maximum loan limit under CGSS?", answer: "Eligible startups can avail collateral-free credit facilities up to ₹10 Crore per borrower." }
+    ],
+    ctaHeading: "Secure Non-Dilutive Startup Debt up to ₹10 Cr with CGSS",
+    ctaSubheading: "Our team assists in structuring bankable DPRs and liaison with member lending institutions."
+  },
+  "msme-champions": {
+    slug: "msme-champions",
+    categoryBadge: "Competitiveness & Technology",
+    title: "MSME Champions Scheme – Sustainable, Innovative & Competitive Support",
+    subtitle: "Ministry of Micro, Small and Medium Enterprises",
+    description: "An integrated portal and funding ecosystem combining MSME Sustainable (ZED), MSME Innovative (Incubation, Design, IPR), and MSME Competitive (Lean) components.",
+    applyLinkText: "Explore Champions →",
+    metrics: [
+      { label: "IPR Subsidy", value: "Up to ₹5 Lakhs" },
+      { label: "Incubation Grant", value: "Up to ₹15 Lakhs" },
+      { label: "Design Grant", value: "Up to ₹40 Lakhs" },
+      { label: "Lean Subsidy", value: "Up to 90%" }
+    ],
+    whoCanApply: [
+      { title: "Eligible MSMEs", description: "All micro, small, and medium enterprises with valid Udyam Registration." },
+      { title: "Innovators & Students", description: "Startups and individual entrepreneurs building novel prototypes." }
+    ],
+    keyFeatures: [
+      { title: "MSME Innovative", description: "Financial assistance for filing patents, trademarks, GI registrations, and building design prototypes." },
+      { title: "MSME Competitive (Lean)", description: "Implementation of 5S, Kaizen, and Lean manufacturing practices with up to 90% government subsidy." },
+      { title: "MSME Sustainable (ZED)", description: "Quality certification with up to 80% subsidy on audit and handholding fees." }
+    ],
+    benefits: [
+      "Up to 100% government reimbursement on patent and trademark registration fees.",
+      "Grants for developing new commercial products in collaboration with top IITs/NIDs.",
+      "Reduces factory waste, machine downtime, and manufacturing operational costs."
+    ],
+    processSteps: [
+      { step: "01", title: "Select Component", description: "Choose between IPR, Incubation, Design, or Lean manufacturing." },
+      { step: "02", title: "Application & Verification", description: "Upload project proposal and vendor quotes on Champions portal." },
+      { step: "03", title: "Grant Disbursement", description: "Grant funds are credited upon milestone verification." }
+    ],
+    documentsRequired: [
+      "Udyam Registration Certificate",
+      "Project Concept Note / Patent Draft",
+      "CA Certified Turnover and Net Worth Statement",
+      "Factory Layout / Lean Audit Scope"
+    ],
+    faqs: [
+      { question: "What is MSME Champions Scheme?", answer: "It is a unified initiative by the Ministry of MSME that brings together Innovation (IPR, Design, Incubation), Competitiveness (Lean), and Sustainability (ZED)." }
+    ],
+    ctaHeading: "Boost Manufacturing Productivity & IP Protection with MSME Champions",
+    ctaSubheading: "Get complete grant application and subsidy advisory with Growthora."
+  },
+  "fund-of-funds": {
+    slug: "fund-of-funds",
+    categoryBadge: "Equity & Venture Capital",
+    title: "Self Reliant India (SRI) Fund & Fund of Funds for Startups (FFS)",
+    subtitle: "Government Equity Capital for MSMEs & Startups",
+    description: "₹50,000 Crore government equity fund aimed at providing growth capital to MSMEs with high export potential, scalable business models, and innovative technology.",
+    applyLinkText: "Apply for Equity Capital →",
+    metrics: [
+      { label: "Fund Corpus", value: "₹50,000 Cr" },
+      { label: "Instrument", value: "Equity / Quasi-Equity" },
+      { label: "Target Units", value: "Growth Stage MSMEs" },
+      { label: "Anchor", value: "NSIC Venture Capital" }
+    ],
+    whoCanApply: [
+      { title: "Growth MSMEs", description: "MSMEs with viable business models, positive cash flows, and expansion plans." },
+      { title: "Export Driven", description: "Units substituting imports or expanding Indian manufacturing footprints." }
+    ],
+    keyFeatures: [
+      { title: "Mother Fund / Daughter Fund Structure", description: "SRI Fund acts as a Mother Fund committing capital to daughter Venture Capital funds." },
+      { title: "Long-term Patient Capital", description: "Provides patient equity without burdensome monthly debt servicing pressures." }
+    ],
+    benefits: [
+      "Accelerates business scale from Micro to Small and Small to Medium/Enterprise.",
+      "Attracts secondary institutional capital and prepares companies for SME IPO listing.",
+      "Professional corporate governance and strategic investor network."
+    ],
+    processSteps: [
+      { step: "01", title: "Information Memorandum", description: "Prepare comprehensive pitch deck, financial model, and valuation report." },
+      { step: "02", title: "Daughter Fund Screening", description: "Pitch to accredited Daughter Funds under SRI / FFS framework." },
+      { step: "03", title: "Due Diligence & Term Sheet", description: "Financial and legal diligence followed by equity investment." }
+    ],
+    documentsRequired: [
+      "Audited Financials for last 3-5 years",
+      "Detailed 5-Year Financial Projections & Unit Economics",
+      "Corporate Structuring & Shareholding Pattern",
+      "Udyam & Company Incorporation Certificate"
+    ],
+    faqs: [
+      { question: "What is the Self-Reliant India (SRI) Fund?", answer: "The SRI Fund is a ₹50,000 Crore equity fund established under the Atmanirbhar Bharat initiative to infuse growth capital into viable MSMEs." }
+    ],
+    ctaHeading: "Raise Growth Capital & Plan Your SME IPO with Growthora",
+    ctaSubheading: "We assist founders with business valuation, pitch decks, and daughter fund investor connections."
+  },
+  "cgssd": {
+    slug: "cgssd",
+    categoryBadge: "Debt Restructuring & Relief",
+    title: "Credit Guarantee Scheme for Subordinate Debt (CGSSD) for Stressed MSMEs",
+    subtitle: "Relief Package for SMA-2 and NPA MSME Accounts",
+    description: "Special government credit guarantee scheme providing subordinated debt assistance to promoters of stressed/NPA MSME units to revive operational business viability.",
+    applyLinkText: "Check CGSSD Support →",
+    metrics: [
+      { label: "Max Debt", value: "Up to ₹75 Lakhs" },
+      { label: "Promoter Stake", value: "15% of Equity" },
+      { label: "Guarantee", value: "90% by CTMSE" },
+      { label: "Moratorium", value: "Up to 7 Years" }
+    ],
+    whoCanApply: [
+      { title: "Stressed MSMEs", description: "MSME accounts categorized as SMA-2 or NPA as of specified cutoff dates with operational viability." }
+    ],
+    keyFeatures: [
+      { title: "Equity Infusion Support", description: "Promoter borrows sub-debt and infuses it as equity/quasi-equity into the enterprise." },
+      { title: "90% Guarantee Cover", description: "Credit Guarantee Trust provides 90% guarantee coverage to lending banks." }
+    ],
+    benefits: [
+      "Provides vital lifeline liquidity to revive struggling manufacturing plants.",
+      "Moratorium on principal repayment up to 7 years to facilitate steady turnaround.",
+      "Helps regularize bank credit ratings and restore supplier supply chains."
+    ],
+    processSteps: [
+      { step: "01", title: "Viability Assessment", description: "Prepare techno-economic viability report and revival roadmap." },
+      { step: "02", title: "Bank Submission", description: "Submit sub-debt request to the lending bank handling the stressed account." },
+      { step: "03", title: "Disbursement & Infusion", description: "Loan disbursed to promoter and immediately infused into the enterprise." }
+    ],
+    documentsRequired: [
+      "Bank account statements & loan statement of account",
+      "Techno-Economic Viability (TEV) Study",
+      "Audited Balance Sheets & GST Returns",
+      "Promoter KYC and Net Worth details"
+    ],
+    faqs: [
+      { question: "Who is eligible for CGSSD?", answer: "Promoters of MSME units that are operational and classified as stressed or NPA can apply for sub-debt up to 15% of promoter stake (max ₹75 Lakhs)." }
+    ],
+    ctaHeading: "Revive Your Stressed Business with Structured Advisory",
+    ctaSubheading: "Growthora prepares bankable revival proposals and negotiates restructuring terms with your bankers."
+  },
+  "pm-svanidhi": {
+    slug: "pm-svanidhi",
+    categoryBadge: "Micro Credit Support",
+    title: "PM SVANidhi Scheme – Affordable Working Capital Loans for Micro Vendors",
+    subtitle: "Ministry of Housing and Urban Affairs (MoHUA)",
+    description: "Special micro-credit facility offering collateral-free working capital loans starting from ₹10,000 up to ₹50,000 with 7% interest subsidy and cashback on digital transactions.",
+    applyLinkText: "Apply PM SVANidhi →",
+    metrics: [
+      { label: "1st Tranche", value: "₹10,000" },
+      { label: "2nd Tranche", value: "₹20,000" },
+      { label: "3rd Tranche", value: "₹50,000" },
+      { label: "Interest Subsidy", value: "7% per annum" }
+    ],
+    whoCanApply: [
+      { title: "Eligible Beneficiaries", description: "Urban and peri-urban micro vendors, street entrepreneurs, and small traders holding Vending Certificates or Recommendation Letters." }
+    ],
+    keyFeatures: [
+      { title: "Tiered Micro Loans", description: "Timely repayment unlocks second tranche of ₹20,000 and third tranche of ₹50,000." },
+      { title: "7% Interest Subsidy", description: "Direct benefit transfer (DBT) of 7% interest subsidy directly into borrower's bank account." },
+      { title: "Monthly Cashback", description: "Up to ₹1,200 annual cashback rewards on conducting digital payments and UPI transactions." }
+    ],
+    benefits: [
+      "Zero collateral, zero third-party guarantee, and minimal documentation.",
+      "Builds an authentic formal credit score with CIBIL and public sector banks.",
+      "Affordable interest rate with quarterly interest subsidy directly credited."
+    ],
+    processSteps: [
+      { step: "01", title: "Check Vending ID", description: "Verify Vending Certificate / Letter of Recommendation from Urban Local Body (ULB)." },
+      { step: "02", title: "Digital KYC", description: "Link Aadhaar with mobile number on PM SVANidhi portal." },
+      { step: "03", title: "Bank Credit", description: "Bank disburses funds directly to applicant's savings account within 48 hours." }
+    ],
+    documentsRequired: [
+      "Aadhaar Card linked with mobile number",
+      "Vending Certificate / Urban Local Body Identity Card",
+      "Bank Account Passbook / Statement",
+      "UPI ID / QR Code details for cashback"
+    ],
+    faqs: [
+      { question: "What is PM SVANidhi?", answer: "PM SVANidhi is a central government scheme providing affordable collateral-free working capital loans of ₹10,000 to ₹50,000 to small street vendors and micro traders." }
+    ],
+    ctaHeading: "Empowering Micro Entrepreneurs Across Bharat",
+    ctaSubheading: "Growthora provides micro enterprise advisory and digital financial literacy support."
   }
 };
 
-// Aliases for scheme slugs (e.g. /schemes/pmegp, /schemes/pmegp-scheme, /schemes/mudra-loan, /schemes/pmmy-mudra-loan)
+// Aliases for scheme slugs
 SCHEME_DETAIL_PAGES["pmegp-scheme"] = SCHEME_DETAIL_PAGES["pmegp"];
 SCHEME_DETAIL_PAGES["pmmy-mudra-loan"] = SCHEME_DETAIL_PAGES["mudra-loan"];
 SCHEME_DETAIL_PAGES["mudra-scheme"] = SCHEME_DETAIL_PAGES["mudra-loan"];
+SCHEME_DETAIL_PAGES["mudra"] = SCHEME_DETAIL_PAGES["mudra-loan"];
 SCHEME_DETAIL_PAGES["cgtmse-scheme"] = SCHEME_DETAIL_PAGES["cgtmse"];
 SCHEME_DETAIL_PAGES["pmfme-scheme"] = SCHEME_DETAIL_PAGES["pmfme"];
 SCHEME_DETAIL_PAGES["tufs-scheme"] = SCHEME_DETAIL_PAGES["tufs"];
@@ -1195,8 +1461,17 @@ SCHEME_DETAIL_PAGES["stand-up-india"] = SCHEME_DETAIL_PAGES["standup-india"];
 SCHEME_DETAIL_PAGES["stand-up-india-scheme"] = SCHEME_DETAIL_PAGES["standup-india"];
 SCHEME_DETAIL_PAGES["msme-zed-scheme"] = SCHEME_DETAIL_PAGES["zed-scheme"];
 SCHEME_DETAIL_PAGES["zed"] = SCHEME_DETAIL_PAGES["zed-scheme"];
+SCHEME_DETAIL_PAGES["zed-certification"] = SCHEME_DETAIL_PAGES["zed-scheme"];
 SCHEME_DETAIL_PAGES["sisfs"] = SCHEME_DETAIL_PAGES["startup-india-seed-fund"];
 SCHEME_DETAIL_PAGES["startup-india"] = SCHEME_DETAIL_PAGES["startup-india-seed-fund"];
+SCHEME_DETAIL_PAGES["startup-india-scheme"] = SCHEME_DETAIL_PAGES["startup-india-seed-fund"];
+SCHEME_DETAIL_PAGES["nsic"] = SCHEME_DETAIL_PAGES["nsic-schemes"];
+SCHEME_DETAIL_PAGES["nsic-scheme"] = SCHEME_DETAIL_PAGES["nsic-schemes"];
+SCHEME_DETAIL_PAGES["champions"] = SCHEME_DETAIL_PAGES["msme-champions"];
+SCHEME_DETAIL_PAGES["champions-scheme"] = SCHEME_DETAIL_PAGES["msme-champions"];
+SCHEME_DETAIL_PAGES["sri-fund"] = SCHEME_DETAIL_PAGES["fund-of-funds"];
+SCHEME_DETAIL_PAGES["svanidhi"] = SCHEME_DETAIL_PAGES["pm-svanidhi"];
+SCHEME_DETAIL_PAGES["pm-svanidhi-scheme"] = SCHEME_DETAIL_PAGES["pm-svanidhi"];
 
 /**
  * Resolves scheme page data from any slug format:
@@ -1222,4 +1497,5 @@ export function getSchemePageBySlug(rawSlug: string): SchemePageData | undefined
 export function getAllSchemeSlugs(): string[] {
   return Object.keys(SCHEME_DETAIL_PAGES);
 }
+
 
