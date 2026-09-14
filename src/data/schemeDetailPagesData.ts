@@ -36,6 +36,7 @@ export interface SchemePageData {
 export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
   "mudra-loan": {
     slug: "mudra-loan",
+    heroImage: "/images/schemes/mudra-loan-hero.jpg",
     categoryBadge: "MSME Micro Credit Scheme",
     title: "Mudra Loan Scheme 2025 (PMMY) – Shishu, Kishore & Tarun Loans in India",
     subtitle: "Pradhan Mantri Mudra Yojana (PMMY)",
@@ -429,6 +430,7 @@ export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
 
   "pmfme": {
     slug: "pmfme",
+    heroImage: "/images/schemes/pmfme-hero.jpg",
     categoryBadge: "Food Processing Sector Scheme",
     title: "PMFME Scheme: Avail 35% Subsidy up to ₹10 Lakh for Food Processing Units",
     subtitle: "PM Formalisation of Micro Food Processing Enterprises Scheme",
@@ -555,6 +557,7 @@ export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
 
   "clcss": {
     slug: "clcss",
+    heroImage: "/images/schemes/clcss-hero.jpg",
     categoryBadge: "Technology Upgradation Scheme",
     title: "CLCSS Scheme: Get 15% Capital Subsidy up to ₹15 Lakh for Technology Upgradation",
     subtitle: "Credit Linked Capital Subsidy Scheme for Technology Upgradation",
@@ -681,6 +684,7 @@ export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
 
   "startup-india-seed-fund": {
     slug: "startup-india-seed-fund",
+    heroImage: "/images/schemes/startup-india-seed-fund-hero.jpg",
     categoryBadge: "Startup Seed Capital Grant",
     title: "Startup India Seed Fund Scheme (SISFS) – Get Up to ₹50 Lakh Grant & Debt",
     subtitle: "DPIIT Startup India Seed Fund Scheme (SISFS)",
@@ -806,6 +810,7 @@ export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
 
   "cgtmse": {
     slug: "cgtmse",
+    heroImage: "/images/schemes/cgtmse-hero.jpg",
     categoryBadge: "Collateral-Free Credit Guarantee",
     title: "CGTMSE Scheme: Get Collateral-Free Business Loans up to ₹5 Crore",
     subtitle: "Credit Guarantee Fund Trust for Micro and Small Enterprises",
@@ -1058,6 +1063,7 @@ export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
 
   "zed-scheme": {
     slug: "zed-scheme",
+    heroImage: "/images/schemes/zed-scheme-hero.jpg",
     categoryBadge: "MSME Quality & Sustainability Grant",
     title: "MSME ZED Scheme: Get Up to 80% Subsidy for Zero Defect Zero Effect Certification",
     subtitle: "Ministry of Micro, Small and Medium Enterprises",
@@ -1182,6 +1188,7 @@ export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
   },
   "nsic-schemes": {
     slug: "nsic-schemes",
+    heroImage: "/images/schemes/nsic-schemes-hero.jpg",
     categoryBadge: "Govt Procurement & Marketing",
     title: "NSIC Single Point Registration & Raw Material Assistance Scheme",
     subtitle: "National Small Industries Corporation (NSIC)",
@@ -1230,48 +1237,141 @@ export const SCHEME_DETAIL_PAGES: Record<string, SchemePageData> = {
   },
   "cgss": {
     slug: "cgss",
+
     categoryBadge: "Credit Guarantee for Startups",
-    title: "Credit Guarantee Scheme for Startups (CGSS) – Collateral-Free Loans up to ₹10 Crore",
+
+    title: "Credit Guarantee Scheme for Startups (CGSS) – Credit Guarantee Cover up to ₹20 Crore",
+
     subtitle: "Department for Promotion of Industry and Internal Trade (DPIIT)",
-    description: "Government credit guarantee providing collateral-free debt financing up to ₹10 Crore to DPIIT-recognized startups through scheduled commercial banks and Venture Debt Funds.",
+
+    description:
+      "Government-backed credit guarantee scheme supporting eligible debt funding of up to ₹20 Crore per borrower for DPIIT-recognised startups through eligible Member Institutions, including Scheduled Commercial Banks, Financial Institutions, qualifying NBFCs and SEBI-registered AIFs.",
+
     applyLinkText: "Check CGSS Eligibility →",
+
     metrics: [
-      { label: "Max Loan", value: "Up to ₹10 Cr" },
-      { label: "Guarantee Cover", value: "Up to 80%" },
-      { label: "Collateral", value: "Nil / Zero" },
-      { label: "Target", value: "DPIIT Startups" }
+      {
+        label: "Max Debt",
+        value: "Up to ₹20 Cr"
+      },
+      {
+        label: "Guarantee Cover",
+        value: "Up to 85%"
+      },
+      {
+        label: "Funding Support",
+        value: "Collateral-Free"
+      },
+      {
+        label: "Target",
+        value: "DPIIT Startups"
+      }
     ],
+
     whoCanApply: [
-      { title: "DPIIT Recognition", description: "Must hold an active DPIIT Startup Certificate." },
-      { title: "Revenue Criteria", description: "Startups with certified stable revenue streams or venture backing." },
-      { title: "Default Status", description: "The startup must not be in default to any lending institution." }
+      {
+        title: "DPIIT Recognition",
+        description:
+          "The entity must be a startup recognised by DPIIT as per applicable Government notifications."
+      },
+      {
+        title: "Default & NPA Status",
+        description:
+          "The startup must not be in default to any lending or investing institution and must not be classified as a Non-Performing Asset under RBI guidelines."
+      },
+      {
+        title: "Member Institution Certification",
+        description:
+          "The startup's eligibility must be certified by the eligible Member Institution for the purpose of CGSS guarantee cover."
+      }
     ],
+
     keyFeatures: [
-      { title: "Transaction-Based Guarantee", description: "Up to 80% guarantee coverage for loans up to ₹3 Crore, and 75% for loans above ₹3 Crore up to ₹5 Crore." },
-      { title: "Umbrella Guarantee for VDFs", description: "Covers venture debt funds investing in high-growth innovative startups." },
-      { title: "Working Capital & Term Debt", description: "Funds can be utilized for scale-up, capex, inventory, and market expansion." }
+      {
+        title: "Transaction-Based Guarantee",
+        description:
+          "Guarantee cover is 85% of the amount in default for loan amounts up to ₹10 Crore and 75% for loan amounts exceeding ₹10 Crore, subject to a maximum guarantee cover of ₹20 Crore per borrower."
+      },
+      {
+        title: "Umbrella Guarantee for AIFs",
+        description:
+          "For eligible SEBI-registered Alternative Investment Funds, guarantee cover is based on actual losses or up to 5% of pooled investment in startups, whichever is lower, subject to scheme limits."
+      },
+      {
+        title: "Multiple Debt Instruments",
+        description:
+          "Eligible facilities may include venture debt, working capital, subordinated or mezzanine debt, debentures, optionally convertible debt and other eligible fund-based or non-fund-based credit facilities."
+      }
     ],
+
     benefits: [
-      "Access up to ₹10 Crore debt without diluting equity shares.",
-      "No mortgage of immovable personal or commercial property required.",
-      "Fast-track appraisal via partnered nationalized and private banks."
+      "Access eligible debt facilities of up to ₹20 Crore per borrower under the CGSS framework, subject to lender approval.",
+      "Supports collateral-free debt funding for eligible DPIIT-recognised startups through participating Member Institutions.",
+      "Enables startups to raise debt capital without necessarily diluting promoter or investor equity."
     ],
+
     processSteps: [
-      { step: "01", title: "DPIIT Verification", description: "Validate startup recognition status and revenue credentials." },
-      { step: "02", title: "Project Proposal & DPR", description: "Prepare growth model, cash flow forecasts, and debt service plan." },
-      { step: "03", title: "Bank Sanction & NCGTC Guarantee", description: "Bank sanctions loan and obtains CGSS guarantee cover through NCGTC." }
+      {
+        step: "01",
+        title: "DPIIT Recognition & Eligibility",
+        description:
+          "Confirm valid DPIIT startup recognition and ensure compliance with CGSS borrower eligibility conditions."
+      },
+      {
+        step: "02",
+        title: "Apply Through Member Institution",
+        description:
+          "Approach an eligible Member Institution or apply through the Jan Samarth Portal for the required credit facility."
+      },
+      {
+        step: "03",
+        title: "Credit Assessment & Sanction",
+        description:
+          "The Member Institution evaluates the commercial viability, repayment capacity and eligibility of the startup before sanctioning the credit facility."
+      },
+      {
+        step: "04",
+        title: "NCGTC Guarantee Cover",
+        description:
+          "After sanction, the Member Institution applies to NCGTC for guarantee cover under CGSS, subject to fulfilment of scheme conditions."
+      }
     ],
+
     documentsRequired: [
       "DPIIT Certificate of Recognition",
-      "Audited Financial Statements & GST Returns",
-      "Business Pitch Deck & Detailed Project Report",
-      "Bank Statements for last 12 months"
+      "KYC and Business Entity Documents",
+      "Audited Financial Statements and GST Returns, where applicable",
+      "Bank Statements and Financial Records",
+      "Business Plan, Funding Proposal or Detailed Project Report, as required by the lender"
     ],
+
     faqs: [
-      { question: "What is the maximum loan limit under CGSS?", answer: "Eligible startups can avail collateral-free credit facilities up to ₹10 Crore per borrower." }
+      {
+        question: "What is the maximum funding limit under CGSS?",
+        answer:
+          "The maximum amount of eligible debt that can be covered under the revised CGSS framework is up to ₹20 Crore per borrower, subject to lender approval and applicable scheme conditions."
+      },
+      {
+        question: "What is the guarantee coverage under CGSS?",
+        answer:
+          "For transaction-based guarantees, CGSS provides cover of 85% of the amount in default for loan amounts up to ₹10 Crore and 75% for loan amounts exceeding ₹10 Crore, subject to a maximum guarantee cover of ₹20 Crore per borrower."
+      },
+      {
+        question: "Who is eligible for CGSS?",
+        answer:
+          "DPIIT-recognised startups that are not in default to any lending or investing institution, are not classified as NPAs under RBI guidelines, and whose eligibility is certified by the Member Institution can be considered under CGSS."
+      },
+      {
+        question: "Which institutions can provide funding under CGSS?",
+        answer:
+          "Eligible Member Institutions include Scheduled Commercial Banks, Financial Institutions, qualifying RBI-registered NBFCs and SEBI-registered Alternative Investment Funds."
+      }
     ],
-    ctaHeading: "Secure Non-Dilutive Startup Debt up to ₹10 Cr with CGSS",
-    ctaSubheading: "Our team assists in structuring bankable DPRs and liaison with member lending institutions."
+
+    ctaHeading: "Explore Startup Debt Support up to ₹20 Cr under CGSS",
+
+    ctaSubheading:
+      "Our team assists with eligibility assessment, funding proposals, DPR preparation and coordination with eligible Member Institutions."
   },
   "msme-champions": {
     slug: "msme-champions",
@@ -1482,7 +1582,7 @@ SCHEME_DETAIL_PAGES["pm-svanidhi-scheme"] = SCHEME_DETAIL_PAGES["pm-svanidhi"];
  */
 export function getSchemePageBySlug(rawSlug: string): SchemePageData | undefined {
   if (!rawSlug) return undefined;
-  
+
   // Clean leading/trailing slashes and prefixes
   let clean = rawSlug.trim().toLowerCase();
   clean = clean.replace(/^#\/?/, '');
@@ -1490,7 +1590,7 @@ export function getSchemePageBySlug(rawSlug: string): SchemePageData | undefined
   if (clean.startsWith('schemes/')) {
     clean = clean.replace(/^schemes\//, '');
   }
-  
+
   return SCHEME_DETAIL_PAGES[clean];
 }
 

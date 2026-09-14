@@ -132,7 +132,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Copyright Bar */}
         <div className="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11.5px] text-slate-500">
-          <span>© 2026 Growthora Advisory Services. All rights reserved.</span>
+          <span>© 2026 Growthora Advisory Private Limited. All rights reserved.</span>
           <div className="flex items-center gap-4">
             <a href="#" className="hover:text-orange-500 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-orange-500 transition-colors">Terms of Service</a>

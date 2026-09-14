@@ -123,7 +123,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               Growthora
             </span>
             <span className="text-[7.5px] sm:text-[8px] font-bold tracking-[0.18em] text-orange-600 uppercase block mt-0.5">
-              Advisory Services
+              Advisory Private Limited
             </span>
           </div>
         </a>
